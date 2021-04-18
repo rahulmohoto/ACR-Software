@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/mobile_navigation"
+	app:startDestination="@+id/nav_Dashboard">
+
+	<fragment
+		android:id="@+id/nav_Dashboard"
+		android:name="com.IDP.Group1.acr.Dashboard"
+		tools:layout="@layout/fragment_dashboard" />
+	<fragment
+		android:id="@+id/nav_analytics"
+		android:name="com.IDP.Group1.acr.Analytics"
+		tools:layout="@layout/fragment_analytics"
+		/>
+	<fragment
+		android:id="@+id/nav_Clean"
+		android:name="com.IDP.Group1.acr.Clean"
+		tools:layout="@layout/fragment_clean" />
+	<fragment
+		android:id="@+id/nav_Shedule"
+		android:name="com.IDP.Group1.acr.Shedule"
+		tools:layout="@layout/fragment_shedule"/>
+
+	<fragment
+		android:id="@+id/nav_FloorMapping"
+		android:name="com.IDP.Group1.acr.FloorMapping"
+		tools:layout="@layout/fragment_floor_mapping" />
+
+	<fragment
+		android:id="@+id/nav_KidMode"
+		android:name="com.IDP.Group1.acr.KidMode"
+		tools:layout="@layout/fragment_kid_mode" />
+	<fragment
+		android:id="@+id/nav_objectDetect"
+		android:name="com.IDP.Group1.acr.ObjectDetect"
+		tools:layout="@layout/fragment_object_detect"/>
+
+	<fragment
+		android:id="@+id/nav_feedback"
+		android:name="com.IDP.Group1.acr.frag_feedback"
+		tools:layout="@layout/fragment_frag_feedback"/>
+	<fragment
+		android:id="@+id/nav_Setting"
+		android:name="com.IDP.Group1.acr.Setting"
+		tools:layout="@layout/fragment_setting" />
+	<fragment
+		android:id="@+id/nav_about"
+		android:name="com.IDP.Group1.acr.frag_about"
+		tools:layout="@layout/fragment_frag_about"/>
+</navigation>

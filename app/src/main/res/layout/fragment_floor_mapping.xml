@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".FloorMapping">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/cLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<Button
+			android:id="@+id/setgrid_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="32dp"
+			android:text="@string/setFloor"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<GridView
+			android:id="@+id/floor_grid"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:layout_marginTop="24dp"
+			android:layout_marginEnd="16dp"
+			android:layout_marginBottom="8dp"
+			android:padding="0dp"
+			android:paddingStart="0dp"
+			android:paddingLeft="0dp"
+			android:paddingTop="0dp"
+			android:paddingEnd="0dp"
+			android:paddingRight="0dp"
+			android:paddingBottom="0dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/send_btn" />
+
+		<Spinner
+			android:id="@+id/send_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:backgroundTint="#1E88E5"
+			android:spinnerMode="dialog"
+			android:text="Send"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/setgrid_btn" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

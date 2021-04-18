@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:showIn="navigation_view">
+
+	<group android:checkableBehavior="single">
+		<item
+			android:id="@+id/nav_Dashboard"
+			android:icon="@drawable/dashboard"
+			android:title="@string/dashboard"/>
+		<item
+			android:id="@+id/nav_Clean"
+			android:icon="@drawable/clean"
+			android:title="@string/clean" />
+		<item
+			android:id="@+id/nav_Shedule"
+			android:icon="@drawable/schedule"
+			android:title="@string/shedule"/>
+		<item
+			android:id="@+id/nav_FloorMapping"
+			android:icon="@drawable/floormapping"
+			android:title="@string/floor_mapping" />
+		<item
+			android:id="@+id/nav_KidMode"
+			android:icon="@drawable/controller"
+			android:title="@string/kid_mode" />
+		<item
+			android:id="@+id/nav_analytics"
+			android:icon="@drawable/analytics"
+			android:title="@string/analytics"
+			/>
+		<item
+			android:id="@+id/nav_objectDetect"
+			android:title="@string/object_detection"
+			android:icon="@drawable/objectdetect"
+			/>
+	</group>
+
+	<item android:title="System">
+		<menu>
+			<item
+				android:title="@string/share"
+				android:icon="@drawable/share"
+				/>
+			<item
+				android:id="@+id/nav_feedback"
+				android:title="@string/feedback"
+				android:icon="@drawable/feedback"
+				/>
+			<item
+				android:id="@+id/nav_Setting"
+				android:icon="@drawable/setting"
+				android:title="@string/setting" />
+			<item
+				android:id="@+id/nav_about"
+				android:icon="@drawable/about"
+				android:title="@string/about"
+				/>
+		</menu>
+	</item>
+</menu>

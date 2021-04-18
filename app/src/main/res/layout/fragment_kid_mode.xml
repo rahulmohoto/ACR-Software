@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KidMode">
+
+
+    <TextView
+        android:id="@+id/debug"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"
+        android:textColor="@color/blue" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sub_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="onClick">
+
+        <ImageView
+            android:id="@+id/up_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:src="@drawable/up_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/right_btn"
+            app:layout_constraintStart_toEndOf="@+id/left_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/left_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="32dp"
+            android:onClick="onClick"
+            android:src="@drawable/left_btn"
+            app:layout_constraintBottom_toTopOf="@+id/down_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/up_btn"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/suct_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/start_btn"
+            app:layout_constraintBottom_toTopOf="@+id/down_btn"
+            app:layout_constraintEnd_toStartOf="@+id/right_btn"
+            app:layout_constraintStart_toEndOf="@+id/left_btn"
+            app:layout_constraintTop_toBottomOf="@+id/up_btn" />
+
+        <ImageView
+            android:id="@+id/right_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="32dp"
+            android:onClick="onClick"
+            android:src="@drawable/right_btn"
+            app:layout_constraintBottom_toTopOf="@+id/down_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.80"
+            app:layout_constraintStart_toEndOf="@+id/left_btn"
+            app:layout_constraintTop_toBottomOf="@+id/up_btn"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/down_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:src="@drawable/down_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/right_btn"
+            app:layout_constraintStart_toEndOf="@+id/left_btn"
+            app:layout_constraintTop_toBottomOf="@+id/up_btn"
+            app:layout_constraintVertical_bias="0.65"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/sonar_mostleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
+            android:text="TextView"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13999999" />
+
+        <TextView
+            android:id="@+id/sonar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sonar_mostleft" />
+
+        <TextView
+            android:id="@+id/sonar_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sonar_left" />
+
+        <TextView
+            android:id="@+id/sonar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sonar_mid" />
+
+        <TextView
+            android:id="@+id/sonar_mostright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sonar_right" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

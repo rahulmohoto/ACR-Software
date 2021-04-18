@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+
+		android:id="@+id/actionMenuBatteryID"
+		android:title="@string/battery"
+		android:icon="@drawable/battery100"
+		app:showAsAction="always"
+		/>
+	<item
+		android:id="@+id/actionMenuUserID"
+		android:title="user"
+		android:icon="@drawable/user"
+		app:showAsAction="always"
+		/>
+
+</menu>

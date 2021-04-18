@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+<!--    <include-->
+<!--        layout="@layout/activity_toolbar"-->
+<!--        android:id="@+id/toolbarID"/>-->
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/app_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACR"
+        android:layout_gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="50sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/ash"
+        android:textColorHint="@color/ash"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/enter_email"
+        android:id="@+id/emailID"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="10dp"
+        />
+
+    <EditText
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/ash"
+        android:textColorHint="@color/ash"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/enter_password"
+        android:id="@+id/passwordID"
+        android:inputType="textPassword"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+    <TextView
+        android:textColorHint="@color/ash"
+        android:id="@+id/forgotPassID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:layout_gravity="end"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logInID"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/log_in"
+        android:textSize="20sp"
+        android:background="@color/blue"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/requestID"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/request_acr"
+        android:textSize="20sp"
+        android:background="@color/blue"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        />
+
+
+    <TextView
+        android:textColorHint="@color/ash"
+        android:id="@+id/errorWarningID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wrong_username_or_password_entered"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<resources>
+	<string name="app_name">ACR</string>
+	<string name="title_activity_user">User</string>
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+	<string name="nav_header_title">user name</string>
+	<string name="nav_header_subtitle">user email</string>
+	<string name="nav_header_desc">Navigation header</string>
+	<string name="action_settings">Settings</string>
+
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="title_activity_home">Home</string>
+	<string name="dashboard">Dashboard</string>
+	<string name="clean">Clean</string>
+	<string name="floor_mapping">Floor Mapping</string>
+	<string name="setting">Setting</string>
+	<string name="status">Status</string>
+	<string name="shedule">Shedule</string>
+	<string name="repeat">Repeat</string>
+	<string name="sat">SAT</string>
+	<string name="sun">SUN</string>
+	<string name="mon">MON</string>
+	<string name="tues">TUES</string>
+	<string name="wed">WED</string>
+	<string name="thu">THU</string>
+	<string name="fri">FRI</string>
+	<string name="_23_12_2019">23/12/2019</string>
+	<string name="wrong_username_or_password_entered">Wrong username or password Entered</string>
+	<string name="log_in">Log In</string>
+	<string name="enter_password">Enter Password</string>
+	<string name="enter_email">Enter Email</string>
+	<string name="enter_name">Enter Name</string>
+	<string name="feedback">Feedback</string>
+	<string name="send">Send</string>
+	<string name="battery">BATTERY</string>
+	<string name="power">POWER</string>
+	<string name="share">share</string>
+	<string name="about">About</string>
+	<string name="exit">Exit</string>
+	<string name="log_out">Log Out</string>
+	<string name="scan_room">Scan  Room</string>
+	<string name="kid_mode">Manual Control</string>
+	<string name="sonar_left">sonar left</string>
+	<string name="sonar_mid">sonar mid</string>
+	<string name="sonar_right">sonar right</string>
+	<string name="sonar_mostright">sonar most right</string>
+	<string name="sonar_mostleft">sonar most left</string>
+	<string name="analytics">Analytics</string>
+	<string name="request_acr">Order an ACR</string>
+	<string name="forgot_password">Forgot Password?</string>
+	<string name="object_detection">Object Detection</string>
+	<string name="select_cleanign_area">Select CLeanign Area</string>
+	<string name="setFloor">Set Length &amp; Width</string>
+	<string name="dialog_setFloor">Set Length &amp; Width</string>
+	<string name="dialog_setFloor_change">Change</string>
+	<string name="dialog_setFloor_cancel">Cancel</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	tools:context=".Dashboard">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		>
+
+		<pl.droidsonroids.gif.GifImageView
+			android:id="@+id/cat"
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="20dp"
+			android:paddingStart="20dp"
+			android:paddingEnd="20dp"
+			android:src="@drawable/giphy" />
+
+
+		<LinearLayout
+			android:padding="20dp"
+			android:weightSum="4"
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			>
+
+			<ImageView
+				android:id="@+id/alertID"
+				android:layout_weight="1"
+				android:layout_gravity="center_horizontal"
+				android:layout_width="0dp"
+				android:layout_height="50dp"
+				android:src="@drawable/alert_off"
+				android:padding="6dp"/>
+			<ImageView
+				android:id="@+id/sleepID"
+				android:layout_weight="1"
+				android:layout_gravity="center_horizontal"
+				android:layout_width="0dp"
+				android:layout_height="50dp"
+				android:src="@drawable/sleep_off"
+				android:padding="6dp"/>
+
+			<ImageView
+				android:id="@+id/notificationID"
+				android:layout_weight="1"
+				android:layout_gravity="center_horizontal"
+				android:layout_width="0dp"
+				android:layout_height="50dp"
+				android:src="@drawable/notification"
+				android:padding="6dp"/>
+			<ImageView
+				android:id="@+id/micID"
+				android:layout_weight="1"
+				android:layout_gravity="center_horizontal"
+				android:layout_width="0dp"
+				android:layout_height="50dp"
+				android:src="@drawable/mic_off"
+				android:padding="6dp"/>
+
+
+
+
+
+		</LinearLayout>
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ImageView
+				android:id="@+id/sweep_img"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:src="@drawable/sweep_image"
+				android:layout_gravity="center"
+				/>
+
+			<pl.droidsonroids.gif.GifImageView
+				android:id="@+id/sweep_gif"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:src="@drawable/sweep"
+				android:layout_gravity="center"
+				android:visibility="gone"
+				/>
+		</FrameLayout>
+
+		<GridView
+			android:id="@+id/dashboardGridViewID"
+			android:layout_width="match_parent"
+			android:numColumns="2"
+			android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+</FrameLayout>
