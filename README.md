@@ -1,6 +1,6 @@
 # ACR
 
-For ease of use - download _ACR_Final.zip_ and open in **Android Studio** .
+![Robot](https://user-images.githubusercontent.com/55422483/115209586-8e656580-a11f-11eb-86c4-4d13d7761289.png)
 
 ### Some of the sample images of the android application
 
